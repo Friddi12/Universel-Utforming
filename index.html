@@ -66,18 +66,37 @@
           <article>
             <h4>Kontakt oss</h4>
             <!-- bevisst: ingen <label> og kun placeholder, dupliserte id-er, dårlig kontrast, farge som eneste signal -->
-            <input type="text" id="navn" placeholder="Navn*">
-            <input type="email" id="email" placeholder="E-post*"> <!-- bevisst: duplisert id -->
-            <input type="tel" placeholder="Telefon">
-            <select>
-              <option>Velg tema*</option>
-              <option>Bestilling</option>
-              <option>Support</option>
-            </select>
-            <textarea rows="3" placeholder="Melding..."></textarea>
-            <p class="help">Felt merket med <span class="required">rød farge</span> er obligatoriske.</p>
-            <p class="error">skjemaet er feil utfylt</p> <!-- bevisst: lav kontrast på feilmelding, små bokstaver -->
-            <span class="fake-submit" role="button" tabindex="5">Send</span> <!-- bevisst: span som knapp, positiv tabindex -->
+            <form>
+              <label for="navn">
+                Navn:
+                <input type="text" id="navn" placeholder="Navn*">
+
+              </label>
+              E-post:
+              <label for="email">
+                <input type="email" id="email" placeholder="E-post*"> <!-- bevisst: duplisert id -->
+              </label>
+
+              <label>
+                Tel:
+                <input type="tel" placeholder="Telefon">
+              </label>
+
+              <label for="service">Tjeneste
+                <select id="service">
+                  <option>Velg tema*</option>
+                  <option>Bestilling</option>
+                  <option>Support</option>
+                </select>
+              </label>
+
+              <label for="">Melding:
+              <textarea rows="3" placeholder="Melding"></textarea>
+              </label>
+              <p class="help">Felt merket med <span class="required">rød farge</span> er obligatoriske.</p>
+              <p class="error">skjemaet er feil utfylt</p> <!-- bevisst: lav kontrast på feilmelding, små bokstaver -->
+              <span class="fake-submit" role="button" tabindex="5">Send</span> <!-- bevisst: span som knapp, positiv tabindex -->
+            </form>
           </article>
 
           <div class="card weird-order">
