@@ -214,13 +214,22 @@
       .weird-order [tabindex] { border: 1px dashed transparent; }
 
       /* bevisst: lav kontrast på skjemafeil */
-      .error { color:#ff9999; }
+      .error { 
+        color:#ff9999; 
+    }
 
       /* bevisst: tekst i store bokstaver og sentrert – vanskelig lesbarhet */
-      .shout { text-transform: uppercase; text-align:center; letter-spacing: 3px; }
+      .shout { 
+        text-transform: uppercase; 
+        text-align:center; 
+        letter-spacing: 3px;
+      }
 
       /* bevisst: alt for smal linjelengde og justified */
-      .narrow { width: 180px; text-align: justify; }
+      .narrow { 
+        width: 180px; 
+        text-align: justify; 
+      }
 
       /* print-uvennlig */
       @media print { body { background: #000; color:#000; } }
