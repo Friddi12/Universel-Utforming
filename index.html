@@ -29,31 +29,31 @@
             <li><a href="#">Kontakt</a></li>
         </ul>
     </nav>
+
     <section>
-      <h2>Viktig beskjed: Les dette! Klikk her! Klikk her! Klikk her! Veldig viktig!</h2>
+      <h2>Important Message: <a href="">The missile knows where it is</a></h2>
     </section>
 
     <aside>
         <section>
-            <h4>Nyheter</h4> <!-- bevisst: hopper over h1/h2/h3 -->
-            <p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt=""> <!-- bevisst: tom alt på meningsbærende bilde -->
-            <a class="tiny-link" href="#">Klikk her</a> for å lese mer om ting.
-            </p>
-            <p class="status-ok">Tilgjengelig</p>
-            <p class="status-bad">Utilgjengelig</p>
+            <h3>Nyheter</h3> <!-- bevisst: hopper over h1/h2/h3 -->
+            <article>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt=""> <!-- bevisst: tom alt på meningsbærende bilde -->
+              <a class="tiny-link" href="#">Klikk her</a> for å lese mer om ting.
+              <p class="status-ok">Tilgjengelig</p>
+              <p class="status-bad">Utilgjengelig</p>
+              </article>
         </section>
 
         <section>
             <h4>Språk</h4>
-            <p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Norway.svg" alt="no"> <!-- bevisst: alt «no» er ikke beskrivende -->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg" alt="en">
-            </p>
-        </section>
+            <ul>
+              <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/500px-Flag_of_Norway.svg.png" alt="Norsk Bokmål"></li> <!-- bevisst: alt «no» er ikke beskrivende -->
+              <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/500px-Flag_of_the_United_Kingdom.svg.png" alt="Engelsk Stor Britania"></li>
+            </ul>
+          </section>
     </aside>
 
-          
 
     <main>
         <h1>
@@ -102,23 +102,40 @@
           </article>
 
           <div class="card weird-order">
-            <h4>Mer innhold</h4>
-            <p>
-              <a href="#">Les mer</a> |
-              <a href="#">Klikk her</a> |
-              <a href="#">Trykk her</a>
-            </p>
-            <p>
-              <span class="btn">Primær handling</span>
-            </p>
+            <h4>Oppgave Liste:</h4>
+              <ol>
+                <li><a href="#">Oppgave 1</a></li>
+                <li><a href="#">Oppgave 2</a></li>
+                <li><a href="#">Oppgave 3</a></li>
+              </ol>
+              <button>Start Eksamen</button>
           </div>
 
           <div class="card">
             <h4>Tabell uten overskrifter</h4>
             <table>
-              <tr><td>1</td><td>2</td><td>3</td></tr>
-              <tr><td>4</td><td>5</td><td>6</td></tr>
-              <tr><td>7</td><td>8</td><td>9</td></tr>
+              <tbody>
+                <tr>
+                  <th>A</th>
+                  <th>B</th>
+                  <th>C</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                </tr>
+              </tbody>
             </table>
           </div>
 
